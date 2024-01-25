@@ -1,6 +1,3 @@
-/* body {
-    background-color: #824f4f;
-} */
 html {
     scroll-behavior: smooth;
 }
@@ -58,34 +55,36 @@ html {
     color: rgb(234, 187, 34);
 }
 
+#heather-drawing {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-text {
+    font-size: 40px;
+    font-family: lemon, sans-serif;
+    color: rgb(226, 124, 45);
+    width:100%;
+    overflow: hidden;
+    margin-left: 15em;
+    margin-top: -10em;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
 #heather-drawing img {
     display: block;
     object-fit: cover;
     border-radius: 50%;
     height: 600px;
     width: 600px;
-    margin: -17em 0 0 8em;
+    margin: -0.5em 0 0 8em;
 }
 
 #heather-intro {
     display: flex;
     justify-content: center;
-}
-
-.heather-font img {
-    width: 40%;
-    margin: 15em 0 0 45em;
-}
-
-
-.heather-font {
-    width:100%;
-    overflow: hidden;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    margin-top:0%;
-}
-
+} 
 /* Fade in effect found at: https://dev.to/tiaeastwood/super-simple-css-animation-for-fade-in-on-page-load-2p8m */
 @keyframes fade-in {
     0% {
@@ -103,11 +102,12 @@ html {
     height: 90vh;
 }
 
+
 #intro-description {
     display: flex;
     justify-content: center;
-    margin-top: -20em;
-    margin-left: 48em;
+    margin-top: 1em;
+    margin-left: 47em;
     width: 30em;
     animation-name: fade-in;
     animation-duration: 3s;
@@ -272,3 +272,23 @@ html {
  #projects {
     height: 100vh;
  }
+
+@media (max-width: 480px) {
+    #intro {
+        height: 100vh;
+    }
+    .overlay-text {
+        font-size: 50px;
+        margin: -0.5em 0 0 5em;
+    }
+    #heather-drawing {
+        margin: -3em 0 0 0;
+    }
+    #intro-description {
+        margin: 3em 0 0 14em;
+        width: 100%;
+    }
+    #social-links {
+        margin: 1.7em 0 0 20em;
+    }
+}
