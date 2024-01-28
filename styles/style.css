@@ -157,7 +157,7 @@ html {
 #about-me {
     background-color: rgb(250, 249, 247);
     height: 100vh;
-    padding-top: 6em;
+    padding-top: 3em;
 }
 
 #about-me p {
@@ -279,6 +279,37 @@ html {
     height: 100vh;
  }
 
+ .projects-header {
+    font-family: lemon, sans-serif;
+    font-size: 5em;
+    color: rgb(40, 122, 102);
+    padding: 0.6em 0 0 1em;
+ }
+
+
+.project-one img {
+    position: relative;
+    top: 7em;
+    left: 2.5em;
+    width: 500px;
+
+}
+
+.project-two img {
+    position: relative;
+    top: -21.3em;
+    left: 31.5em;
+    width: 500px;
+
+}
+
+.project-three img {
+    position: relative;
+    top: -49.5em;
+    left: 60em;
+    width: 500px;
+}
+
 @media screen and (max-device-width: 480px) {
     #top-navbar {
         display: none;
@@ -322,24 +353,37 @@ html {
     }
 }
 @media screen and (max-width: 360px) {
+    #intro {
+        height: 100vh;
+    }
     .intro-greeting {
         position: relative;
-        top: 0.5em;
-        left: -1em;
+        top: 2em;
+        left: -17em;
+        font-size: 2em;
     }
     .intro-name {
         position: relative;
-        top: 0.5em;
-        left: -1.5em;
+        top: 2em;
+        left: -18em;
+        font-size: 2em;
     }
     #heather-drawing img {
         position: relative;
-        top: 2em;
-        left: -2.5em;
-        height: 350px;
-        width: 350px; 
+        top: -19em;
+        left: -6.4em;
+        height: 300px;
+        width: 300px; 
     }
     #intro-description {
-        width: 60%;
+        width: 80%;
+        position: relative;
+        top: 4em;
+        left: -46em;
+    }
+    #social-links {
+        position: relative;
+        top: 10em;
+        left: -10em;
     }
 }
