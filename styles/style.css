@@ -286,28 +286,38 @@ html {
     padding: 0.6em 0 0 1em;
  }
 
+.project-container {
+    display: flex;
+    justify-content: space-evenly;  
+}
 
 .project-one img {
-    position: relative;
-    top: 7em;
-    left: 2.5em;
-    width: 500px;
-
+    transition: ease-in-out 0.2s;
 }
 
 .project-two img {
-    position: relative;
-    top: -21.3em;
-    left: 31.5em;
-    width: 500px;
-
+    transition: ease-in-out 0.2s;
 }
 
 .project-three img {
-    position: relative;
-    top: -49.5em;
-    left: 60em;
+    transition: ease-in-out 0.2s;
+}
+
+.project-one img, .project-two img, .project-three img {
     width: 500px;
+    margin: 4em 0 0 0;
+}
+
+.project-one img:hover {
+    transform: translateY(6px);
+}
+
+.project-two img:hover {
+    transform: translateY(6px);
+}
+
+.project-three img:hover {
+    transform: translateY(6px);
 }
 
 @media screen and (max-device-width: 480px) {
